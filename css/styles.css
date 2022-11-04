@@ -1,0 +1,160 @@
+*{
+   margin: 0%; 
+   padding: 0%;
+}
+
+.navegacion li {
+    display: inline;
+    color: black;
+    margin-right: 2rem;
+    text-align: center;
+    
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: 'Cormorant Garamond', serif
+}
+ 
+
+/*Fuentes 
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+
+/*Codigo de los colores
+violeta oscuro: 8e9aaf
+lila: cbc0d3
+rosa oscuro: efd3d7
+rosa: feeafa
+celeste: dee2ff*/
+
+/*Inicio estilo del index*/
+
+.imagen-fondo {
+    background-image: url(../imágenes/fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cabecera {
+ background-color:#cbc0d3;
+ text-align: center;
+ margin-block-end: 10px;
+ position: relative;
+}
+
+.cabecera__titulo {
+    margin-block-end: 10px;
+    font-weight: bolder;
+}
+
+.body__frase {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight:lighter ;
+    text-align: center;
+    margin-top: 40px;
+}
+.body_frase_pequeña {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    color:white ;
+    text-align: center;
+}
+
+
+.servicios {
+    border: solid  #8e9aaf;
+    width: 360px;
+    height: 80%;
+    background-color: #feeafa;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 200px;
+        
+}
+
+.servicios__parrafo {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+/*En el caso de servicios y productos me gustaria que la imagen este a la izq y el texto a la derecha*/
+.servicio__img__arriba {
+    width: 160px;
+    height: 160px;
+}
+
+.producto__img__abajo {
+    width: 160px;
+    height: 160px;
+    margin-left: 200px;
+}
+
+.productos {
+    border: solid  #8e9aaf;
+    width: 360px;
+    height: 80%;
+    background-color: #feeafa;
+    padding: 10px;
+    margin-left: 900px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #efd3d7;
+    padding: 1%;
+    display: flex;
+    flex-wrap: nowrap;
+   
+}
+
+.footer__contacto {
+    margin-right: 64px;
+    margin-left: 64px;
+    text-align: end;
+    font-family: 'Roboto Condensed', sans-serif;
+   
+}
+
+.footer__titulo {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;   
+}
+
+
+/* ejemplo para cuando tenga que hacer lo de las imagenes de servicios y productos
+
+.foto2 { padding: 10px; margin: 10px; border: 2px solid black; float: right; width: 250px; }*/
+
+
+
+/* Fin estilo del index*/
+
+
+
+/*Inicio estilo de servicios*/
+
+/*Fin estilo de servicios*/
+
+
+
+
+/*Inicio estilo de productos*/
+/*Fin estilo de productos*/
+
+/*Inicio estilo de turnos*/
+/*Fin estilo de turnos*/
+
+/*Inicio estilo de contactos*/
+
+/*Fin estilo de contactos*/
+
