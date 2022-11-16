@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Emilia Cosmetología</title>
     
@@ -14,13 +14,12 @@
     
    
 
-<body class="imagen-fondo">
- <!--Menú de navegación-->
-    <header class="cabecera"> 
-        <h1 class="cabecera__titulo">EMILIA - COSMETOLOGÍA</h1>
-        <img src="../PreEntrega1Piermarini/imágenes/Logo-vc.png" width="100" height="100" alt="">
+<body id="grilla-emi">
+    <header id="cabecera"> <!--Header-->
+        <h1 class="cabecera__titulo">Emilia.</h1>
+        <!--Menú de navegación-->
             <nav>
-                  <ul class="navegacion">
+                  <ul id="navegacion">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="pages/servicios.html">Servicios</a></li>
                     <li><a href="pages/productos.html">Productos</a></li>
@@ -28,51 +27,92 @@
                     <li><a href="pages/contacto.html">Contacto</a></li>
                  </ul>
             </nav>
+            <!--Fin menú de navegación-->
     </header>
+    
+        <section id="carrusel_img"> 
+            <!-- Carrusel de imagenes con promociones, información sobre envios y medios de pago-->
+            <h2 class="titulo__home">Es momento de relajarse!</h2>
+            <img class="imagencarrusel" src="../PreEntrega1Piermarini/imágenes/1.png" alt="carrusel">
+        </section>
 
-    <section>
-        <p class="body__frase">Es momento de relajarse</p>
-        <p class="body_frase_pequeña">porque todos merecemos cosas únicas!</p>
+        <!--Seccion de las cards de productos destacados-->
+        <section id="productos-destacados"> 
+            <h2 class="titulo-productos">Productos más vendidos</h2>
+            
+            <div class="padre-cards">   <!--Div padre-->
+                  <!--Card 1-->
+                <div class="card-productos">   <!--Div hijos -->
+                    <img src="../PreEntrega1Piermarini/imágenes/Serum de vit c.jpeg" alt="Serum">
+                    <p class="texto-productos">Serum Radian C - Lidherma</p>
+                    <p class="precios">$4415</p>
+
+                    <button>Agregar al carrito</button>
+                </div>
+
+                <!--Card 2-->
+                <div class="card-productos">
+                    <img src="../PreEntrega1Piermarini/imágenes/Roller.jpeg" alt="Roller">
+                    <p class="texto-productos">Roller de jade - Coony</p>
+                    <p class="precios">$1300</p>
+
+                    <button>Agregar al carrito</button>
+                </div>
+
+                  <!--Card 3-->
+                  <div class="card-productos">
+                    <img src="../PreEntrega1Piermarini/imágenes/Contorno de ojos.jpeg" alt="contornodeojos">
+                    <p class="texto-productos">Contorno de ojos Pro Reti C - Idraet</p>
+                    <p class="precios">$3100</p>
+
+                    <button>Agregar al carrito</button>
+                </div>
+
+                <!--Card 4-->
+                <div class="card-productos">
+                    <img src="../PreEntrega1Piermarini/imágenes/Protector solar.jpeg" alt="Protector solar">
+                    <p class="texto-productos">Protector solar con color 30FPS - Idraet</p>
+                    <p class="precios">$2850</p>
+
+                    <button>Agregar al carrito</button>
+                </div>
+                  
+                <!--Card 5-->
+                <div class="card-productos">
+                    <img src="../PreEntrega1Piermarini/imágenes/Acido hialuronio.jpeg" alt="Crema">
+                    <p class="texto-productos">Crema Hyaluronic 4D - Lidherma</p>
+                    <p class="precios">$5105</p>
+
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+         <!--Sección banner-->
+         <section id="banner-info">
+            <div class="padre-banner">
+                <!-- Banner 1-->
+                <div class="info-banner">
+                    <h4>Envío a todo el país</h4>
+                    <p class="descripcion-banner">Gratis en compras mayores a $10.000</p>
+                </div>
+
+                <!-- Banner 2-->
+                <div class="info-banner">
+                    <h4>Todos los medios de pago</h4>
+                    <p class="descripcion-banner">Pagá en 6 cuotas sin interés</p>
+                </div>
+
+                <!-- Banner 3-->
+                <div class="info-banner">
+                    <h4>Asesoramiento garantizado</h4>
+                    <p class="descripcion-banner">Chateá con nosotros</p>
+                </div>
+            </div>
     </section>
 
-    <section>
-        <div class="servicios">
-            <p class="servicios__parrafo">¡Tratamientos personalizados, dependiendo de los objetivos y necesidades de la piel!  </p>
-            <img src="../PreEntrega1Piermarini/imágenes/SERVICIOS.jpeg" class="servicio__img__arriba" alt="">
-        </div>
-    </section>
-
-    <section>
-        <div class="productos">
-            <p class="servicios__parrafo" >¡Productos para armar tu rutina!</p>
-            <img src="../PreEntrega1Piermarini/imágenes/productos1.jpeg" class="producto__img__abajo" alt="">
-        </div>
-    </section>
-
-     <footer class="footer">
-        <p>Parrafo para commit</p>
-            <p>Todos los derechos reservados de Emilia Piermarini</p>
-            <h4 class="footer__titulo">CONTACTATE CON NOSOTRAS!</h4>
-            <div class="footer__contacto">
-                <ul>
-                    <h5>Teléfono</h5>
-                    <li>29435454934</li>
-                    <li>29422592355</li>
-                </ul>
-            </div>
-            <div class="footer__contacto">
-                <ul>
-                    <h5>Redes sociales</h5>
-                    <li>Instagram: emilia.cosmetología</li>
-                    <li>Facebook: emilia - skincare</li>
-                </ul>
-            </div>
-            <div class="footer__contacto">
-                <ul>
-                    <h5>Email</h5>
-                    <li>emi.pierma@gmail.com</li>
-                </ul>
-            </div>
+    <footer id="footer">
+           <p>Todos los derechos reservados de Emilia Piermarini</p>
      </footer>
 </body>
 </html>

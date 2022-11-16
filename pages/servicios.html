@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Servicios</title>
 </head>
  
  
-<body>
-    <header class="cabecera"> 
+<body id="grilla-servicios">
+    <header id="cabecera-servicios"> 
         <h1 class="cabecera__titulo">Servicios</h1>
-        <img src="../imágenes/Logo-vc.png" width="100" height="100" alt="">
+        <!--Menú de navegación-->
             <nav>
-                  <ul class="navegacion">
+                  <ul id="navegacion-servicios">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="productos.html">Productos</a></li>
@@ -25,68 +25,105 @@
                     <li><a href="contacto.html">Contacto</a></li>
                  </ul>
             </nav>
+             <!--Fin menú de navegación-->
     </header>
 
-    <section>
-        <ul>
-            <li>
-                <h4>Limpieza facial profunda</h4>
-            </li>
-            <p> Un tratamiento ideal para afinar la piel, hidratarla, darle luminosidad, oxigenación y extraer puntos negros y quistes de millium.
-                Incluye aparatología de alta frecuencia.</p>
-            <li>
-                <h4>Dermaplaning</h4>
-            </li>
-            <p>Es una técnica de exfoliación mecánica, realizada a través de un bisturí. Consiste en raspar la capa córnea, con el fin de eliminar células muertas y el vello facial. 
-                Es un procedimiento indoloro!</p>
-            <li>
-                <h4>Punta de diamante</h4>
-            </li>
-            <p>Proceso que consiste en exfoliar la piel para descamar y afinar capas superfiiales de la piel para lograr la renovación epidérmica y estimulación del colágeno y elastina!. </p>
-            <li>
-                <h4>Lifting de pestañas</h4>
-            </li>
-            <p>Es un procedimiento en el cual vamos a arquear tu pestaña natural para que se vea ondulada y amplie tu mirada.
-                El efecto es de una mirada despierta y descansada. Se puede realizar en pestañas cortas y largas</p>
-            <li>
-                <h4>Laminado de cejas</h4>
-            </li>
-            <p>Es un tratamiento estético semipermanente que logra un efecto de ceja peinada, fijando el pelo hacia arriba. La técnica no rellena áreas sin pelo, sino que ordena las cejas logrando un rediseño muy favorecedor.  ncluye el perfilado de cejas!</p>
-            <li>
-                <h4>Perfilado de cejas</h4>
-            </li>
-            <p>El perfilado no consiste en afinar la, ni depilar en exceso, es diseñar las cejas teniendo en cuenta la simetría del rostro y los gustos del cliente! </p>
-        </ul>
-
-
-
+    <section id="carrusel_img">
+        <h2 class="titulo__home">Es momento de relajarse!</h2>
+        <img class="carrusel-img" src="../imágenes/Servicios promo.png" alt="carrusel">
+        <!--Agregar imagen del carrusel-->
     </section>
 
+    <section id="Servicios-emi">
+         <!--Descripcion de los servicios-->
+         <div class="padre-servicios"> <!--Div padre-->
+
+            <div class="servicios-info">
+                 <ul>
+                    <li> <!--Servicio 1-->
+                        <h4>Limpieza facial profunda</h4>
+                    </li>
+                    <p class="servicios-texto"> Un tratamiento ideal para afinar la piel, hidratarla, darle luminosidad, oxigenación y extraer puntos negros y quistes de millium.
+                        Incluye aparatología de alta frecuencia.</p>
+                </ul>
+            </div>
+                
+            <div class="servicios-info">
+                 <ul>
+                    <li> <!--Servicio 2-->
+                        <h4>Dermaplaning</h4>
+                    </li>
+                    <p class="servicios-texto">Es una técnica de exfoliación mecánica, realizada a través de un bisturí. Consiste en raspar la capa córnea, con el fin de eliminar células muertas y el vello facial. 
+                    Es un procedimiento indoloro!</p>
+                </ul>
+            </div>
+                
+            <div class="servicios-info">
+                <ul>
+                    <li> <!--Servicio 3-->
+                        <h4>Punta de diamante</h4>
+                    </li>
+                    <p class="servicios-texto">Proceso que consiste en exfoliar la piel para descamar y afinar capas superfiiales de la piel para lograr la renovación epidérmica y estimulación del colágeno y elastina!. </p>
+                </ul>
+            </div>
+
+            <div class="servicios-info">
+                <ul>
+                    <li> <!--Servicio 4-->
+                        <h4>Lifting de pestañas</h4>
+                    </li>
+                    <p class="servicios-texto">Es un procedimiento en el cual vamos a arquear tu pestaña natural para que se vea ondulada y amplie tu mirada.
+                    El efecto es de una mirada despierta y descansada. Se puede realizar en pestañas cortas y largas</p>
+                </ul>
+            </div>
+
+            <div class="servicios-info">
+                <ul>
+                    <li> <!--Servicio 5-->
+                        <h4>Laminado de cejas</h4>
+                    </li>
+                     <p class="servicios-texto">Es un tratamiento estético semipermanente que logra un efecto de ceja peinada, fijando el pelo hacia arriba. La técnica no rellena áreas sin pelo, sino que ordena las cejas logrando un rediseño muy favorecedor.  ncluye el perfilado de cejas!</p>
+                </ul>
+            </div>
+                
+            <div class="servicios-info">
+                <ul>
+                    <li> <!--Servicio 6-->
+                         <h4>Perfilado de cejas</h4>
+                    </li>
+                     <p class="servicios-texto">El perfilado no consiste en afinar la, ni depilar en exceso, es diseñar las cejas teniendo en cuenta la simetría del rostro y los gustos del cliente! </p>
+                </ul>
+            </div>
+         </div>
+    </section>
+
+    <!--Sección banner-->
+    <section id="banner-info">
+        <div class="padre-banner">
+            <!-- Banner 1-->
+            <div class="info-banner">
+                <h4>Envío a todo el país</h4>
+                <p class="descripcion-banner">Gratis en compras mayores a $10.000</p>
+            </div>
+
+            <!-- Banner 2-->
+            <div class="info-banner">
+                <h4>Todos los medios de pago</h4>
+                <p class="descripcion-banner">Pagá en 6 cuotas sin interés</p>
+            </div>
+
+            <!-- Banner 3-->
+            <div class="info-banner">
+                <h4>Asesoramiento garantizado</h4>
+                <p class="descripcion-banner">Chateá con nosotros</p>
+            </div>
+        </div>
+</section>
 
 
-    <footer class="footer">
-        <h4>CONTACTATE CON NOSOTRAS!</h4>
-        <div class="footer__contacto">
-            <ul>
-                <h5>Teléfono</h5>
-                <li>29435454934</li>
-                <li>29422592355</li>
-            </ul>
-        </div>
-        <div class="footer__contacto">
-            <ul>
-                <h5>Redes sociales</h5>
-                <li>Instagram: emilia.cosmetología</li>
-                <li>Facebook: emilia - skincare</li>
-            </ul>
-        </div>
-        <div class="footer__contacto">
-            <ul>
-                <h5>Email</h5>
-                <li>emi.pierma@gmail.com</li>
-            </ul>
-        </div>
-    </footer>
+    <footer id="footer">
+        <p>Todos los derechos reservados de Emilia Piermarini</p>
+  </footer>
 </body>
 
 

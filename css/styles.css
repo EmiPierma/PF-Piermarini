@@ -2,159 +2,339 @@
    margin: 0%; 
    padding: 0%;
 }
-
-.navegacion li {
-    display: inline;
-    color: black;
-    margin-right: 2rem;
-    text-align: center;
     
+/*Estilos en grupo*/
+a {
+text-decoration: none;
+color: white;
+}
+
+img {
+    max-width: 100%;
 }
 
 h1 {
     text-align: center;
     font-weight: bold;
-    font-size: 32px;
-    font-family: 'Cormorant Garamond', serif
-}
- 
-
-/*Fuentes 
-font-family: 'Cormorant Garamond', serif;
-font-family: 'Roboto Condensed', sans-serif;*/
-
-/*Codigo de los colores
-violeta oscuro: 8e9aaf
-lila: cbc0d3
-rosa oscuro: efd3d7
-rosa: feeafa
-celeste: dee2ff*/
-
-/*Inicio estilo del index*/
-
-.imagen-fondo {
-    background-image: url(../imágenes/fondo.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-size: 65px;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
 }
 
-.cabecera {
- background-color:#cbc0d3;
- text-align: center;
- margin-block-end: 10px;
- position: relative;
+#grilla-emi {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "carrusel carrusel carrusel"
+    "productos productos productos"
+    "banner banner banner"
+    "footer footer footer";
+
+    grid-template-columns: repeat (3, 1fr);
+    background-color: white;
+    }
+
+
+/*Header*/
+#cabecera {
+grid-area: header;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: #007e6e;
+
 }
 
+/*Media queries dentro del header*/
+@media screen and (max-width: 767px) {
+    #cabecera {
+        flex-direction: column;
+    }
+} 
+
+#navegacion li {
+    color: white;
+    margin-right: 2rem;
+    text-align: center;
+    background-color: #ffb39c;
+    padding: 5px 5px;
+    list-style: none;
+}
+
+#navegacion {
+    display: flex;
+}
+
+@media screen and (max-width: 455px) {
+    #navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        height: 150px;
+    }  
+}
+   
 .cabecera__titulo {
-    margin-block-end: 10px;
+    margin-block-end: 20px;
     font-weight: bolder;
+   }
+
+/*Carrusel*/
+#carrusel_img {
+grid-area: carrusel;
 }
 
-.body__frase {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 60px;
-    font-weight:lighter ;
+.titulo__home {
     text-align: center;
-    margin-top: 40px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 2px;
+    margin-bottom: 5px;
 }
-.body_frase_pequeña {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 30px;
-    color:white ;
+
+/*Productos destacados*/
+#productos-destacados {
+grid-area: productos;
+}
+
+.titulo-productos {
     text-align: center;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.padre-cards {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+row-gap: 1rem;
+justify-items: center;
 }
 
 
-.servicios {
-    border: solid  #8e9aaf;
-    width: 360px;
-    height: 80%;
-    background-color: #feeafa;
-    padding: 10px;
-    margin-bottom: 30px;
-    margin-top: 40px;
-    margin-left: 200px;
-        
+@media screen and (max-width: 992px) {
+    .padre-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+@media screen and (max-width: 767px) {
+    .padre-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+.card-productos {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.servicios__parrafo {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-    margin-top: 16px;
+.card-productos img {
+    height: 16rem;
+}
+
+.texto-productos {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.precios {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/*Banner*/
+#banner-info {
+grid-area: banner;
+background-color: #ffb39c; /*Cambiar el color y poner en degrade*/
+margin-top: 2rem;
+padding: 1rem;
+}
+
+.padre-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+@media screen and (max-width: 992px){
+    .padre-banner {
+        grid-template-columns: repeat (1, 1fr);
+} 
+} 
+
+@media screen and (max-width: 767px){
+    .padre-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+
+} 
+} 
+
+.info-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.descripcion-banner {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/*Footer*/
+#footer {
+    grid-area: footer;
+    background-color: #007e6e;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     text-align: center;
-}
-
-/*En el caso de servicios y productos me gustaria que la imagen este a la izq y el texto a la derecha*/
-.servicio__img__arriba {
-    width: 160px;
-    height: 160px;
-}
-
-.producto__img__abajo {
-    width: 160px;
-    height: 160px;
-    margin-left: 200px;
-}
-
-.productos {
-    border: solid  #8e9aaf;
-    width: 360px;
-    height: 80%;
-    background-color: #feeafa;
-    padding: 10px;
-    margin-left: 900px;
-    margin-right: 10px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
+    }
 
 .footer {
-    background-color: #efd3d7;
+    background-color: #007e6e;
     padding: 1%;
     display: flex;
     flex-wrap: nowrap;
-   
 }
-
-.footer__contacto {
-    margin-right: 64px;
-    margin-left: 64px;
-    text-align: end;
-    font-family: 'Roboto Condensed', sans-serif;
-   
-}
-
-.footer__titulo {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;   
-}
-
-
-/* ejemplo para cuando tenga que hacer lo de las imagenes de servicios y productos
-
-.foto2 { padding: 10px; margin: 10px; border: 2px solid black; float: right; width: 250px; }*/
-
-
 
 /* Fin estilo del index*/
 
 
 
-/*Inicio estilo de servicios*/
-
-/*Fin estilo de servicios*/
 
 
+/* Inicio estilo de SERVICIOS*/
+#grilla-servicios {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "carrusel carrusel carrusel"
+    "servicios servicios servicios"
+    "banner banner banner"
+    "footer footer footer";
+
+    grid-template-columns: repeat (3, 1fr);
+    background-color: white;
+}
+
+/*Cabecera servicios*/
+#cabecera-servicios {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007e6e;
+}
+
+@media screen and (max-width: 767px) {
+    #cabecera-servicios {
+        flex-direction: column;
+    }
+} 
+
+#navegacion-servicios li {
+    color: white;
+    margin-right: 2rem;
+    text-align: center;
+    background-color: #ffb39c;
+    padding: 5px 5px;
+    list-style: none;
+
+}
+
+#navegacion-servicios {
+    display: flex;
+}
 
 
-/*Inicio estilo de productos*/
-/*Fin estilo de productos*/
+@media screen and (max-width: 455px) {
+    #navegacion-servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        height: 150px;
+    }  
+}
 
-/*Inicio estilo de turnos*/
-/*Fin estilo de turnos*/
 
-/*Inicio estilo de contactos*/
+/*Carrusel servicios*/
+#carrusel-img {
+    grid-area: carrusel;
+    }
 
-/*Fin estilo de contactos*/
 
+/*Servicios*/
+#servicios-emi {
+    grid-area: servicios;
+}
+
+.padre-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 200px ;
+    row-gap: 3rem;
+    justify-content: center;
+    padding: 3rem;
+    margin-left: 60px;
+}
+
+    
+    @media screen and (max-width: 992px) {
+        .padre-servicios {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    } 
+    
+    @media screen and (max-width: 767px) {
+        .padre-servicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    } 
+
+.servicios-info {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.servicios-texto{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+/*Banner*/
+#banner-info {
+    grid-area: banner;
+}
+
+
+
+
+
+/*Footer*/
+#footer {
+    grid-area: footer;
+}
