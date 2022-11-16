@@ -134,10 +134,13 @@ justify-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
-.card-productos img {
+.card-productos img:hover {
     height: 16rem;
+    transform: scale(1.5);
+
 }
 
 .texto-productos {
@@ -150,13 +153,15 @@ justify-items: center;
     font-weight: 600;
 }
 
+
 /*Banner*/
 #banner-info {
 grid-area: banner;
-background-color: #ffb39c; /*Cambiar el color y poner en degrade*/
 margin-top: 2rem;
 padding: 1rem;
+background-image: linear-gradient(180deg,#007e6e, #ffb39c );
 }
+
 
 .padre-banner {
     display: grid;
@@ -196,17 +201,17 @@ h4{
     font-weight: 300;
 }
 
+
 /*Footer*/
 #footer {
     grid-area: footer;
-    background-color: #007e6e;
+    background-color: #ffb39c;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     text-align: center;
     }
 
 .footer {
-    background-color: #007e6e;
     padding: 1%;
     display: flex;
     flex-wrap: nowrap;
@@ -225,6 +230,7 @@ h4{
     "header header header"
     "carrusel carrusel carrusel"
     "servicios servicios servicios"
+    "barra barra barra"
     "banner banner banner"
     "footer footer footer";
 
@@ -277,7 +283,6 @@ h4{
     grid-area: carrusel;
     }
 
-
 /*Servicios*/
 #servicios-emi {
     grid-area: servicios;
@@ -322,8 +327,47 @@ h4{
     font-weight: 300;
 }
 
+/*Barra de animacion dentro de servicios*/
+#barra-animacion {
+    grid-area: barra;
+    grid-template-columns: (1 1fr);
+    justify-content: center;
+    text-align: center;
+    background-color: #ffb39c;
 
+}
 
+.barra-texto {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #ffb39c;
+}
+
+.barra-progreso {
+    margin-top: 30px;
+    width: 100%;
+    border: solid 1px;
+    height: 7px;
+ }
+
+ .barra-completando {
+    border: solid 1px;
+    height: 6px;
+    width: 85%;
+    background-color: fuchsia;
+    animation: cargando 3s linear;
+}
+
+@keyframes cargando {
+    0% {
+       width: 0;
+    }
+ 
+    100% {
+       width: 85%;
+    }
+ }
+ 
 
 /*Banner*/
 #banner-info {
