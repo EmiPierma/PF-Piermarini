@@ -82,6 +82,8 @@ background-color: #007e6e;
 /*Carrusel*/
 #carrusel_img {
 grid-area: carrusel;
+display: flex;
+flex-direction: column;
 }
 
 .titulo__home {
@@ -281,6 +283,9 @@ h4{
 /*Carrusel servicios*/
 #carrusel-img {
     grid-area: carrusel;
+    display: flex;
+    flex-direction: column;
+    height: 500px;;
     }
 
 /*Servicios*/
