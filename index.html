@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--<link rel="stylesheet" href="bootstrap-5.2.2-dist (1)/bootstrap-5.2.2-dist/css/bootstrap.min.css">-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
     <title>Emilia Cosmetología</title>
     
 </head>
@@ -15,9 +18,49 @@
    
 
 <body id="grilla-emi">
-    <header id="cabecera"> <!--Header-->
+    <header id="cabecera" class="container-fluid"> <!--Header-->
         <h1 class="cabecera__titulo">Emilia.</h1>
-        <!--Menú de navegación-->
+
+        <nav class="navbar navbar-expand-lg color-nav">
+            <div class="container-fluid">
+              <a class="navbar-brand active" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="pages/servicios.html">Servicios</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/productos.html">Productos</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Turnos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="pages/horariosdeatencion.html">Horarios de atención</a></li>
+                      <li><a class="dropdown-item" href="pages/politicasdecancelacion.html">Políticas de cancelación</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <!--Version del menú anterior 
             <nav>
                   <ul id="navegacion">
                     <li><a href="../index.html">Inicio</a></li>
@@ -26,71 +69,71 @@
                     <li><a href="pages/turnos.html">Turnos</a></li>
                     <li><a href="pages/contacto.html">Contacto</a></li>
                  </ul>
-            </nav>
-            <!--Fin menú de navegación-->
+            </nav> -->
     </header>
     
-        <section id="carrusel_img"> 
-            <!-- Carrusel de imagenes con promociones, información sobre envios y medios de pago-->
-            <h2 class="titulo__home">Es momento de relajarse!</h2>
-            <img class="imagencarrusel" src="../PreEntrega1Piermarini/imágenes/1.png" alt="carrusel">
-        </section>
+    <section id="carrusel_img" class="container-fluid"> 
+       <!-- Carrusel de imagenes con promociones, información sobre envios y medios de pago-->
+       <h2 class="titulo__home">Es momento de relajarse!</h2>
+          <img class="imagencarrusel" src="imagenes/1.png" alt="carrusel">
+  
+    </section>
 
         <!--Seccion de las cards de productos destacados-->
-        <section id="productos-destacados"> 
-            <h2 class="titulo-productos">Productos más vendidos</h2>
+      <section id="productos-destacados" class="container-fluid"> 
+          <h2 class="titulo-productos">Productos más vendidos</h2>
             
-            <div class="padre-cards">   <!--Div padre-->
-                  <!--Card 1-->
-                <div class="card-productos">   <!--Div hijos -->
-                    <img src="../PreEntrega1Piermarini/imágenes/Serum de vit c.jpeg" alt="Serum">
-                    <p class="texto-productos">Serum Radian C - Lidherma</p>
-                    <p class="precios">$4415</p>
+          <div class="padre-cards">   <!--Div padre-->
+              <!--Card 1-->
+             <div class="card-productos">   <!--Div hijos -->
+                  <img src="imagenes/serum-de-vitc.jpeg" alt="Serum">
+                  <p class="texto-productos">Serum Radian C - Lidherma</p>
+                  <p class="precios">$4415</p>
 
-                    <button>Agregar al carrito</button>
-                </div>
+                  <button>Agregar al carrito</button>
+              </div>
 
-                <!--Card 2-->
-                <div class="card-productos">
-                    <img src="../PreEntrega1Piermarini/imágenes/Roller.jpeg" alt="Roller">
-                    <p class="texto-productos">Roller de jade - Coony</p>
-                    <p class="precios">$1300</p>
+              <!--Card 2-->
+              <div class="card-productos">
+                  <img src="imagenes/Roller.jpeg" alt="Roller">
+                  <p class="texto-productos">Roller de jade - Coony</p>
+                  <p class="precios">$1300</p>
 
-                    <button>Agregar al carrito</button>
-                </div>
+                  <button>Agregar al carrito</button>
+              </div>
 
-                  <!--Card 3-->
-                  <div class="card-productos">
-                    <img src="../PreEntrega1Piermarini/imágenes/Contorno de ojos.jpeg" alt="contornodeojos">
-                    <p class="texto-productos">Contorno de ojos Pro Reti C - Idraet</p>
-                    <p class="precios">$3100</p>
+                <!--Card 3-->
+               <div class="card-productos">
+                  <img src="imagenes/contorno-de-ojos.jpeg" alt="contornodeojos">
+                  <p class="texto-productos">Contorno de ojos Pro Reti C - Idraet</p>
+                  <p class="precios">$3100</p>
 
-                    <button>Agregar al carrito</button>
-                </div>
+                  <button>Agregar al carrito</button>
+               </div>
 
                 <!--Card 4-->
-                <div class="card-productos">
-                    <img src="../PreEntrega1Piermarini/imágenes/Protector solar.jpeg" alt="Protector solar">
-                    <p class="texto-productos">Protector solar con color 30FPS - Idraet</p>
-                    <p class="precios">$2850</p>
+               <div class="card-productos">
+                  <img src="imagenes/protector-solar.jpeg" alt="Protector solar">
+                  <p class="texto-productos">Protector solar con color 30FPS - Idraet</p>
+                  <p class="precios">$2850</p>
 
-                    <button>Agregar al carrito</button>
-                </div>
+                  <button>Agregar al carrito</button>
+               </div>
                   
                 <!--Card 5-->
-                <div class="card-productos">
-                    <img src="../PreEntrega1Piermarini/imágenes/Acido hialuronio.jpeg" alt="Crema">
-                    <p class="texto-productos">Crema Hyaluronic 4D - Lidherma</p>
-                    <p class="precios">$5105</p>
+              <div class="card-productos">
+                  <img src="imagenes/Acido-hialuronico.jpeg" alt="Crema">
+                  <p class="texto-productos">Crema Hyaluronic 4D - Lidherma</p>
+                  <p class="precios">$5105</p>
 
-                    <button>Agregar al carrito</button>
-                </div>
+                  <button>Agregar al carrito</button>
+              </div>
             </div>
         </section>
 
         
          <!--Sección banner-->
-         <section id="banner-info">
+         <section id="banner-info" class="container-fluid">
             <div class="padre-banner">
                 <!-- Banner 1-->
                 <div class="info-banner">
@@ -113,8 +156,13 @@
             
     </section>
 
-    <footer id="footer">
+    <footer id="footer" class="container-fluid">
            <p>Todos los derechos reservados de Emilia Piermarini</p>
      </footer>
+
+     <!--<script src="bootstrap-5.2.2-dist (1)/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>-->
+     <!--Script de Bootstrap con CDN-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
 </body>
 </html>

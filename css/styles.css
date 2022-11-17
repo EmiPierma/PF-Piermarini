@@ -21,6 +21,7 @@ h1 {
     color: white;
 }
 
+/*Inicio INDEX*/
 #grilla-emi {
     display: grid;
     grid-template-areas: 
@@ -34,6 +35,9 @@ h1 {
     background-color: white;
     }
 
+    .color-nav {
+        background-color: #007e6e;
+    }
 
 /*Header*/
 #cabecera {
@@ -52,7 +56,7 @@ background-color: #007e6e;
     }
 } 
 
-#navegacion li {
+/*#navegacion li {
     color: white;
     margin-right: 2rem;
     text-align: center;
@@ -63,7 +67,7 @@ background-color: #007e6e;
 
 #navegacion {
     display: flex;
-}
+}*/
 
 @media screen and (max-width: 455px) {
     #navegacion {
@@ -78,6 +82,10 @@ background-color: #007e6e;
     margin-block-end: 20px;
     font-weight: bolder;
    }
+
+#navbarSupportedContent {
+    font-weight: 600;
+}
 
 /*Carrusel*/
 #carrusel_img {
@@ -169,6 +177,7 @@ background-image: linear-gradient(180deg,#007e6e, #ffb39c );
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+
 }
 
 @media screen and (max-width: 992px){
@@ -225,7 +234,8 @@ h4{
 
 
 
-/* Inicio estilo de SERVICIOS*/
+/* ----------------------------------------------------------------------------------
+Inicio estilo de SERVICIOS*/
 #grilla-servicios {
     display: grid;
     grid-template-areas: 
@@ -379,11 +389,163 @@ h4{
     grid-area: banner;
 }
 
-
-
-
-
 /*Footer*/
 #footer {
     grid-area: footer;
 }
+
+
+/*Inicio estilo CONTACTOS*/
+#grilla-contacto {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "carrusel carrusel carrusel"
+    "contacto contacto contacto"
+    "direccion direccion direccion"
+    "banner banner banner"
+    "footer footer footer";
+
+    grid-template-columns: repeat (3, 1fr);
+    background-color: white;
+}
+
+/*Cabecera contacto*/
+#cabecera-contacto {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007e6e;
+}
+
+
+
+/*Inicio estilo de PRODUCTOS*/
+#cabecera-productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007e6e;
+}
+
+
+
+/*Inicio estilo de HORARIOS DE ATENCIÓN*/
+#grilla-horarios {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "tabla tabla tabla"
+    "banner banner banner"
+    "footer footer footer";
+
+    grid-template-columns: repeat (3, 1fr);
+    background-color: white;
+}
+
+/*Cabecera horarios*/
+#cabecera-horarios {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007e6e;
+}
+
+@media screen and (max-width: 767px) {
+    #cabecera-servicios {
+        flex-direction: column;
+    }
+} 
+
+
+/*Tabla*/
+#horarios-tabla {
+    grid-area: tabla;
+}
+
+.tabla.padre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 200px ;
+    row-gap: 3rem;
+    justify-content: center;
+    padding: 3rem;
+    margin-left: 60px;
+}
+
+    
+    @media screen and (max-width: 992px) {
+        .padre-servicios {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    } 
+    
+    @media screen and (max-width: 767px) {
+        .padre-servicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    } 
+
+
+table {     
+    font-family: 'Poppins', sans-serif;
+    font-size:14px; 
+    border-radius: 3px;
+    border: #007e6e 2px solid;
+    margin-top: 40px;
+}
+ 
+th {     
+    font-size: 16px; 
+    font-weight: bold; 
+    background-color: white;  
+    color: #2F2F2F; 
+    margin-left: 20px;
+    padding: 10px;
+}
+
+td {
+    background: #007e6e;
+    color: #2F2F2F; 
+    border: white 1px solid;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+
+
+/*Inicio estilo de POLITICAS DE CANCELACION*/
+.titulo-cabecera {
+    font-size: 30px;
+}
+
+#grilla-politicas {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "horarios horarios horarios"
+    "banner banner banner"
+    "footer footer footer";
+
+    grid-template-columns: repeat (3, 1fr);
+    background-color: white;
+}
+
+/*Cabecera horarios*/
+#cabecera-politicas {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007e6e;
+}
+
+@media screen and (max-width: 767px) {
+    #cabecera-servicios {
+        flex-direction: column;
+    }
+} 
