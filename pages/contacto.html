@@ -4,18 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto</title>
 </head>
 
-<body>
-    <header class="cabecera"> 
-        <h1 class="cabecera__titulo">Contacto</h1>
-        <img src="../imágenes/Logo-vc.png" width="100" height="100" alt="">
-            <nav>
+<body id="grilla-contacto" class="container-fluis">
+    <header id="cabecera-contacto"> 
+        <h1 class="cabecera-titulo-contacto">Contacto</h1>
+        
+        <nav class="navbar navbar-expand-lg color-nav">
+            <div class="container-fluid">
+              <a class="navbar-brand"  href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="servicios.html">Servicios</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="turnos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Turnos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="horariosdeatencion.html">Horarios de atención</a></li>
+                      <li><a class="dropdown-item" href="politicasdecancelacion.html">Políticas de cancelación</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                  </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        
+          <!--Menu de navegacion anterior
+              <nav>
                   <ul class="navegacion">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
@@ -24,9 +65,9 @@
                     <li><a href="contacto.html">Contacto</a></li>
                  </ul>
             </nav>
+        -->
     </header>
 
-    
    <section>
     <h3>CONTACTO</h3>
     <form>
@@ -72,29 +113,35 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12216.622863819139!2d-70.0794591!3d-40.0496258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77290b8d77307178!2sEmilia%20-%20Cosmetolog%C3%ADa!5e0!3m2!1ses!2sar!4v1666023308185!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </section>
 
+     <!--Sección banner-->
+     <section id="banner-info" class="container-fluid">
+        <div class="padre-banner">
+            <!-- Banner 1-->
+            <div class="info-banner">
+                <h4>Envío a todo el país</h4>
+                <p class="descripcion-banner">Gratis en compras mayores a $10.000</p>
+            </div>
+
+            <!-- Banner 2-->
+            <div class="info-banner">
+                <h4>Todos los medios de pago</h4>
+                <p class="descripcion-banner">Pagá en 6 cuotas sin interés</p>
+            </div>
+
+            <!-- Banner 3-->
+            <div class="info-banner">
+                <h4>Asesoramiento garantizado</h4>
+                <p class="descripcion-banner">Chateá con nosotros</p>
+            </div>
+        </div>
+        
+</section>
+
    <!--Acá me gustaría agregar botones-->
-   <footer class="footer">
-    <h4>CONTACTATE CON NOSOTRAS!</h4>
-    <div class="footer__contacto">
-        <ul>
-            <h5>Teléfono</h5>
-            <li>29435454934</li>
-            <li>29422592355</li>
-        </ul>
-    </div>
-    <div class="footer__contacto">
-        <ul>
-            <h5>Redes sociales</h5>
-            <li>Instagram: emilia.cosmetología</li>
-            <li>Facebook: emilia - skincare</li>
-        </ul>
-    </div>
-    <div class="footer__contacto">
-        <ul>
-            <h5>Email</h5>
-            <li>emi.pierma@gmail.com</li>
-        </ul>
-    </div>
-</footer>
+   <footer id="footer" class="container-fluid">
+    <p>Todos los derechos reservados de Emilia Piermarini</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
