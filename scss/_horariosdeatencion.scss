@@ -1,0 +1,81 @@
+ /*Inicio estilo de HORARIOS DE ATENCIÓN*/
+    
+ #grilla-horarios {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "tabla tabla tabla"
+    "banner banner banner"
+    "footer footer footer";
+
+    grid-template-columns: repeat (3, 1fr);
+    background-color: white;
+}
+
+/*Cabecera horarios*/
+#cabecera-horarios {
+    grid-area: header;
+    @include cabecera-centrado-bgcolor; 
+}
+
+
+@media screen and (max-width: 767px) {
+    #cabecera-servicios {
+        flex-direction: column;
+    }
+} 
+
+/*Tabla*/
+#horarios-tabla {
+    grid-area: tabla;
+}
+
+.tabla.padre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 200px ;
+    row-gap: 3rem;
+    justify-content: center;
+    padding: 3rem;
+    margin-left: 60px;
+}
+
+    
+    @media screen and (max-width: 992px) {
+        .padre-servicios {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    } 
+    
+    @media screen and (max-width: 767px) {
+        .padre-servicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    } 
+
+table {     
+    font-family: 'Poppins', sans-serif;
+    font-size:14px; 
+    border-radius: 3px;
+    border: #007e6e 2px solid;
+    margin-top: 40px;
+}
+ 
+th {     
+    font-size: 16px; 
+    font-weight: bold; 
+    background-color: white;  
+    color: #2F2F2F; 
+    margin-left: 20px;
+    padding: 10px;
+}
+
+td {
+    background: #007e6e;
+    color: #2F2F2F; 
+    border: white 1px solid;
+    margin-left: 20px;
+    padding: 10px;
+}

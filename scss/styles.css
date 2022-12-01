@@ -64,7 +64,7 @@ h1 {
 }
 .cabecera__titulo {
   -webkit-margin-after: 20px;
-  margin-block-end: 20px;
+          margin-block-end: 20px;
   font-weight: bolder;
 }
 
@@ -313,7 +313,7 @@ h4 {
   width: 85%;
   background-color: fuchsia;
   -webkit-animation: cargando 3s linear;
-  animation: cargando 3s linear;
+          animation: cargando 3s linear;
 }
 
 @-webkit-keyframes cargando {
@@ -324,6 +324,7 @@ h4 {
     width: 85%;
   }
 }
+
 @keyframes cargando {
   0% {
     width: 0;
@@ -521,6 +522,4 @@ h1 {
   font-size: 65px;
   font-family: "Abril Fatface", cursiva;
   color: white;
-} /*# sourceMappingURL=styles.css.map */
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

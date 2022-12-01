@@ -1,0 +1,32 @@
+#grilla-productos {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "productos productos productos"
+    "productos productos productos"
+    "banner banner banner"
+    "footer footer footer";
+
+    grid-template-columns: repeat (3, 1fr);
+    background-color: white;
+    }
+
+#cabecera-productos {
+    grid-area: header;
+    @include cabecera-centrado-bgcolor
+}
+
+@media screen and (max-width: 767px) {
+    #cabecera-productos {
+        flex-direction: column;
+    }
+} 
+
+@media screen and (max-width: 455px) {
+    #navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        height: 150px;
+    }  
+}

@@ -1,0 +1,19 @@
+{
+  "name": "preentrega1piermarini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmiPierma/PreEntrega2-Piermarini.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmiPierma/PreEntrega2-Piermarini/issues"
+  },
+  "homepage": "https://github.com/EmiPierma/PreEntrega2-Piermarini#readme"
+}

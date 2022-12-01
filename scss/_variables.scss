@@ -1,0 +1,42 @@
+/*Colores*/
+$colorpincipal: #007e6e;
+$colorsecundario: #ffb39c;
+
+/*Fuentes*/
+$Titulocabecera: 'Abril Fatface', cursiva;
+$fuentebody:'Poppins', sans-serif;
+
+
+/*MIXIN*/
+/*CABECERa*/
+ @mixin cabecera-centrado-bgcolor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $colorpincipal;
+    }
+    
+/*CARRUSEL*/
+@mixin carrusel-flex-columna {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+/*BANNER*/
+@mixin banner-texto {
+   margin-top: 2rem;
+   padding: 1rem;
+   background-image: linear-gradient(180deg, $colorpincipal, $colorsecundario );
+}
+
+/*FOOTER*/
+@mixin footer-derechosreservados {
+    background-color: $colorsecundario;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    flex-wrap: nowrap;
+}

@@ -1,0 +1,27 @@
+    
+.titulo-cabecera {
+    font-size: 30px;
+}
+
+#grilla-politicas {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "horarios horarios horarios"
+    "banner banner banner"
+    "footer footer footer";
+
+    grid-template-columns: repeat (3, 1fr);
+    background-color: white;
+}
+
+#cabecera-politicas {
+    grid-area: header;
+    @include cabecera-centrado-bgcolor;
+}
+
+@media screen and (max-width: 767px) {
+    #cabecera-servicios {
+        flex-direction: column;
+    }
+} 
