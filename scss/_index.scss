@@ -1,5 +1,3 @@
-
- 
  #grilla-emi {
     display: grid;
     grid-template-areas: 
@@ -74,7 +72,7 @@ grid-area: productos;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 25px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 .padre-cards {
@@ -128,7 +126,6 @@ justify-items: center;
 }
 
 
-
 /*Banner*/
 #banner-info {
 grid-area: banner;
@@ -178,8 +175,9 @@ h4{
 #footer {
     grid-area: footer;
    @include footer-derechosreservados;
+   text-align: center;
 }
 
-/* Fin estilo del index*/
+
 
   

@@ -11,17 +11,94 @@
     "banner banner banner"
     "footer footer footer";
 
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat (1, 1fr);
     background-color: white;
 }
 
+/*Header*/
+.titulo-politicas {
+    font-size: 40px;
+}
 #cabecera-politicas {
     grid-area: header;
     @include cabecera-centrado-bgcolor;
 }
 
 @media screen and (max-width: 767px) {
-    #cabecera-servicios {
+    #cabecera-politicas {
         flex-direction: column;
     }
 } 
+
+@media screen and (max-width: 455px) {
+    #navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        height: 150px;
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Banner*/
+#banner-info {
+    grid-area: banner;
+    @include banner-texto;
+    }
+    
+    .padre-banner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    
+    }
+    
+    @media screen and (max-width: 992px){
+        .padre-banner {
+            grid-template-columns: repeat (1, 1fr);
+} 
+} 
+    
+@media screen and (max-width: 767px){
+    .padre-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+ } 
+} 
+    
+.info-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.descripcion-banner {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+    
+/*Footer*/
+#footer {
+    grid-area: footer;
+    @include footer-derechosreservados;
+    text-align: center;
+ }
+    
+    
+    
