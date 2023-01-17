@@ -23,7 +23,7 @@ img {
 h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 65px;
   font-family: "Abril Fatface", cursiva;
   color: white;
 }
@@ -195,19 +195,33 @@ h4 {
   font-weight: 300;
 }
 
+@media screen and (min-width: 455px) {
+  .padre-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
 /*Footer*/
 #footer {
   grid-area: footer;
   background-color: #ffb39c;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  text-align: center;
   padding: 1%;
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
 }
 
+@media screen and (min-width: 455px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #grilla-servicios {
   display: grid;
   grid-template-areas: "header header header" "carrusel carrusel carrusel" "servicios servicios servicios" "barra barra barra" "banner banner banner" "footer footer footer";
@@ -347,18 +361,63 @@ h4 {
   justify-items: center;
 }
 
+@media screen and (max-width: 992px) {
+  .padre-banner {
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .padre-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.info-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.descripcion-banner {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 455px) {
+  .padre-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
 /*Footer*/
 #footer {
   grid-area: footer;
   background-color: #ffb39c;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  text-align: center;
   padding: 1%;
   display: flex;
   flex-wrap: nowrap;
 }
 
+@media screen and (min-width: 455px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+}
 #grilla-productos {
   display: grid;
   grid-template-areas: "header header header" "categorias categorias categorias" "categorias categorias categorias" "banner banner banner" "footer footer footer";
@@ -471,14 +530,12 @@ h4 {
   background-color: #ffb39c;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  text-align: center;
   padding: 1%;
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
 }
 
-/*Inicio estilo de HORARIOS DE ATENCIÓN*/
 #grilla-horarios {
   display: grid;
   grid-template-areas: "header header header" "tabla tabla tabla" "banner banner banner" "footer footer footer";
@@ -496,8 +553,15 @@ h4 {
 }
 
 @media screen and (max-width: 767px) {
-  #cabecera-servicios {
+  #cabecera-horarios {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 455px) {
+  #navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
 /*Tabla*/
@@ -518,15 +582,27 @@ h4 {
 }
 
 @media screen and (max-width: 992px) {
-  .padre-servicios {
+  #horarios-tabla {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 767px) {
-  .padre-servicios {
+  #horarios-tabla {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 455px) {
+  table {
+    width: 100%;
+  }
+  table tr {
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    padding: 10px;
+    margin-bottom: 10px;
   }
 }
 table {
@@ -610,19 +686,33 @@ h4 {
   font-weight: 300;
 }
 
+@media screen and (min-width: 455px) {
+  .padre-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
 /*Footer*/
 #footer {
   grid-area: footer;
   background-color: #ffb39c;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  text-align: center;
   padding: 1%;
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
 }
 
+@media screen and (min-width: 455px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .titulo-cabecera {
   font-size: 30px;
 }
@@ -660,6 +750,15 @@ h4 {
     height: 150px;
   }
 }
+.politicas-hijo {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
 /*Banner*/
 #banner-info {
   grid-area: banner;
@@ -710,36 +809,20 @@ h4 {
   background-color: #ffb39c;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  text-align: center;
   padding: 1%;
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
 }
 
-/*Inicio estilo CONTACTOS*/
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-img {
-  max-width: 100%;
-}
-
 #grilla-contacto {
   display: grid;
-  grid-template-areas: "header header header" "carrusel carrusel carrusel" "contacto contacto contacto" "direccion direccion direccion" "banner banner banner" "footer footer footer";
+  grid-template-areas: "header header header" "contacto  contacto contacto" "direccion direccion direccion" "banner banner banner" "footer footer footer";
   grid-template-columns: repeat 3, 1fr;
   background-color: white;
 }
 
-/*Cabecera contacto*/
+/*Header*/
 #cabecera-contacto {
   grid-area: header;
   display: flex;
@@ -751,7 +834,160 @@ img {
 h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 65px;
+  font-size: 50px;
   font-family: "Abril Fatface", cursiva;
   color: white;
+}
+
+@media screen and (max-width: 767px) {
+  #cabecera-contacto {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 455px) {
+  #navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+  }
+}
+/*Contacto*/
+h3 {
+  text-align: center;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 10px 0;
+  margin-right: 30px;
+}
+
+legend {
+  font-weight: 600;
+}
+
+#formulario-contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+form {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.formulario-datos {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  width: 100%;
+  background-color: #aced9c;
+}
+
+.datos-personales {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*Ubicación*/
+#ubicacion {
+  grid-area: direccion;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*Banner*/
+#banner-info {
+  grid-area: banner;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-image: linear-gradient(180deg, #007e6e, #ffb39c);
+}
+
+.padre-banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .padre-banner {
+    grid-template-columns: repeat 1, 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .padre-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+  }
+}
+.info-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.descripcion-banner {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 455px) {
+  .padre-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+}
+/*Footer*/
+#footer {
+  grid-area: footer;
+  background-color: #ffb39c;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  padding: 1%;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+@media screen and (min-width: 455px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=styles.css.map */

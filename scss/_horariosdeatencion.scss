@@ -1,6 +1,4 @@
- /*Inicio estilo de HORARIOS DE ATENCIÓN*/
-    
- #grilla-horarios {
+#grilla-horarios {
     display: grid;
     grid-template-areas: 
     "header header header"
@@ -20,10 +18,19 @@
 
 
 @media screen and (max-width: 767px) {
-    #cabecera-servicios {
+    #cabecera-horarios {
         flex-direction: column;
     }
 } 
+
+@media screen and (max-width: 455px) {
+    #navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        
+     }  
+}
 
 /*Tabla*/
 #horarios-tabla {
@@ -44,18 +51,36 @@
 
     
     @media screen and (max-width: 992px) {
-        .padre-servicios {
+        #horarios-tabla {
             grid-template-columns: repeat(2, 1fr);
         }
     } 
     
     @media screen and (max-width: 767px) {
-        .padre-servicios {
+        #horarios-tabla {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
     } 
+
+
+    @media screen and (max-width: 455px) {
+        table {
+            width: 100%;
+        }
+
+        table tr {
+            display: flex;
+            flex-direction: column;
+            border: 1px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }  
+    }
+    
+
+
 
 table {     
     font-family: 'Poppins', sans-serif;
@@ -137,6 +162,18 @@ h4{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
+
+@media screen and (min-width: 455px) {
+    .padre-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    
+    }  
+}
+
     
 /*Footer*/
 #footer {
@@ -144,6 +181,13 @@ h4{
     @include footer-derechosreservados;
     text-align: center;
  }
+
+ @media screen and (min-width: 455px) {
+    #footer {
+        display: flex;
+        flex-direction: column;
+            }  
+}
     
     
     

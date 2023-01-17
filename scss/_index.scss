@@ -152,7 +152,6 @@ grid-area: banner;
         align-items: center;
         justify-content: space-between;
         height: 150px;
-
 } 
 } 
 
@@ -171,6 +170,17 @@ h4{
     font-weight: 300;
 }
 
+@media screen and (min-width: 455px) {
+    .padre-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    
+    }  
+}
+
 /*Footer*/
 #footer {
     grid-area: footer;
@@ -178,6 +188,13 @@ h4{
    text-align: center;
 }
 
+
+@media screen and (min-width: 455px) {
+    #footer {
+        display: flex;
+        flex-direction: column;
+            }  
+}
 
 
   
