@@ -176,7 +176,17 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 150px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 455px) {
+  .padre-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 200px;
   }
 }
 .info-banner {
@@ -363,8 +373,10 @@ h4 {
 
 @media screen and (max-width: 992px) {
   .padre-banner {
+    grid-template-columns: repeat 1, 1fr;
     display: flex;
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -373,6 +385,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    height: 200px;
   }
 }
 .info-banner {
@@ -391,13 +404,14 @@ h4 {
   font-weight: 300;
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (min-width: 455px) {
   .padre-banner {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 30px;
     margin-top: 30px;
+    height: 200px;
   }
 }
 /*Footer*/
@@ -409,13 +423,13 @@ h4 {
   padding: 1%;
   display: flex;
   flex-wrap: nowrap;
+  text-align: center;
 }
 
 @media screen and (min-width: 455px) {
   #footer {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
   }
 }
 #grilla-productos {
@@ -451,7 +465,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 150px;
+    height: 200px;
   }
 }
 /*Categorias*/
@@ -487,6 +501,33 @@ h4 {
 }
 
 /*Banner*/
+#banner-info {
+  grid-area: banner;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-image: linear-gradient(180deg, #007e6e, #ffb39c);
+}
+
+.padre-banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .padre-banner {
+    grid-template-columns: repeat 1, 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .padre-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+  }
+}
 .info-banner {
   display: flex;
   flex-direction: column;
@@ -503,25 +544,13 @@ h4 {
   font-weight: 300;
 }
 
-#banner-info {
-  grid-area: banner;
-  margin-top: 2rem;
-  padding: 1rem;
-  background-image: linear-gradient(180deg, #007e6e, #ffb39c);
-}
-
-@media screen and (max-width: 992px) {
-  .padre-banner {
-    grid-template-columns: repeat 1, 1fr;
-  }
-}
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 455px) {
   .padre-banner {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 150px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 /*Footer*/
@@ -536,6 +565,12 @@ h4 {
   text-align: center;
 }
 
+@media screen and (min-width: 455px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #grilla-horarios {
   display: grid;
   grid-template-areas: "header header header" "tabla tabla tabla" "banner banner banner" "footer footer footer";
@@ -667,7 +702,7 @@ td {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 150px;
+    height: 200px;
   }
 }
 .info-banner {
@@ -784,7 +819,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 150px;
+    height: 200px;
   }
 }
 .info-banner {
@@ -803,6 +838,15 @@ h4 {
   font-weight: 300;
 }
 
+@media screen and (min-width: 455px) {
+  .padre-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
 /*Footer*/
 #footer {
   grid-area: footer;
@@ -815,6 +859,12 @@ h4 {
   text-align: center;
 }
 
+@media screen and (min-width: 455px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #grilla-contacto {
   display: grid;
   grid-template-areas: "header header header" "contacto  contacto contacto" "direccion direccion direccion" "banner banner banner" "footer footer footer";
@@ -919,75 +969,5 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-/*Banner*/
-#banner-info {
-  grid-area: banner;
-  margin-top: 2rem;
-  padding: 1rem;
-  background-image: linear-gradient(180deg, #007e6e, #ffb39c);
-}
-
-.padre-banner {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-}
-
-@media screen and (max-width: 992px) {
-  .padre-banner {
-    grid-template-columns: repeat 1, 1fr;
-  }
-}
-@media screen and (max-width: 767px) {
-  .padre-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 150px;
-  }
-}
-.info-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-
-.descripcion-banner {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-}
-
-@media screen and (min-width: 455px) {
-  .padre-banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-bottom: 50px;
-  }
-}
-/*Footer*/
-#footer {
-  grid-area: footer;
-  background-color: #ffb39c;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  padding: 1%;
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: center;
-}
-
-@media screen and (min-width: 455px) {
-  #footer {
-    display: flex;
-    flex-direction: column;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -34,7 +34,7 @@
         display: flex;
         flex-direction: column;
         justify-content:space-around;
-        height: 150px;
+        height: 200px;
     }  
 }
 
@@ -74,27 +74,18 @@ margin-top: 15px;
 }
 
 /*Banner*/
-.info-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-    
-h4{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-.descripcion-banner {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-}
-    
 #banner-info {
     grid-area: banner;
     @include banner-texto;
     }
-
+    
+    .padre-banner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    
+    }
+    
     @media screen and (max-width: 992px){
         .padre-banner {
             grid-template-columns: repeat (1, 1fr);
@@ -107,18 +98,49 @@ h4{
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            height: 150px;
-    
+            height: 200px;
     } 
     } 
     
+    .info-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h4{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+    .descripcion-banner {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    }
+    
+    @media screen and (min-width: 455px) {
+        .padre-banner {
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        
+        }  
+    }
+    
+    /*Footer*/
+    #footer {
+        grid-area: footer;
+       @include footer-derechosreservados;
+       text-align: center;
+    }
+    
+    
+    @media screen and (min-width: 455px) {
+        #footer {
+            display: flex;
+            flex-direction: column;
+                }  
+    }
 
-/*Footer*/
-#footer {
-    grid-area: footer;
-    @include footer-derechosreservados;
-    text-align: center;
-}
-    
-   
       
